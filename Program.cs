@@ -17,10 +17,13 @@ namespace CatWorx.BadgeMaker
         {
           break;
         }
-        employees.Add(input);
+        Employee employee = new Employee();
+        employee.FirstName = input;
+        // employees.Add(input);
       }
       return employees;
     }
+
     static void PrintEmployees(List<string> employees)
     {
       for (int i = 0; i < employees.Count; i++)
@@ -28,9 +31,11 @@ namespace CatWorx.BadgeMaker
         Console.WriteLine(employees[i]);
       }
     }
+
     static void Main(string[] args)
     {
       List<string> employees = GetEmployees();
+      PrintEmployees(employees);
     }
   }
 }
