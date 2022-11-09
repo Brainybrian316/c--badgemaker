@@ -72,8 +72,6 @@ paint.Color = SKColors.Black;
 
 paint.Typeface = SKTypeface.FromFamilyName("Courier New");
 
-
-
     SKImage photo = SKImage.FromEncodedData(await client.GetStreamAsync(employees[i].GetPhotoUrl()));
     SKImage background = SKImage.FromEncodedData(File.OpenRead("badge.png"));
     SKBitmap badge = new SKBitmap(BADGE_WIDTH, BADGE_HEIGHT);
