@@ -13,6 +13,10 @@ namespace CatWorx.BadgeMaker
       PhotoUrl = photoUrl;
     }
 
+    public string GetCompanyName() {
+      return "Cat Worx";
+    }
+
     public string GetFullName() {
       return FirstName + " " + LastName;
     }
